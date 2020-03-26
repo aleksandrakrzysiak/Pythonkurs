@@ -1,3 +1,4 @@
+#komentarz
 import moduly.walidator
 # 3. Napisz program do obliczania pola powierzchni koła o zadanym promieniu (wyświetlając wzór i kolejne obliczenia)
 def pole_kola():
