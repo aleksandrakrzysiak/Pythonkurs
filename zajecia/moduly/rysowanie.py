@@ -1,4 +1,4 @@
-import moduly.walidator
+import zajecia.moduly.walidator
 # 5. Napisz program, który rysuje prostokąt o zadanych rozmiarach (wysokość i szerokość) za pomocą znaków:
 #     | (bok)
 #     - (góra/dół)
@@ -12,8 +12,8 @@ import moduly.walidator
 def prostokat():
     x = int(input('Podaj szerokość prostokąta '))
     y = int(input('Podaj wysokość prostokąta '))
-    if moduly.walidator.walidacja(x) == True:
-        if moduly.walidator.walidacja(y) == True:
+    if zajecia.moduly.walidator.walidacja(x) == True:
+        if zajecia.moduly.walidator.walidacja(y) == True:
             print('+' + x * '-' + '+')
             print(y*('|'+(' '* x ) + '|'+ '\n'), end='')
             print('+' + x * '-' + '+')
@@ -43,6 +43,6 @@ def rysowanie():
 
 def piramida():
     n = int(input('Podaj wysokość piramidy: '))
-    if moduly.walidator.walidacja(n) == True:
+    if zajecia.moduly.walidator.walidacja(n) == True:
         for i in range(n):
             print(' ' *(n-i-1)+'#'*(2*i+1))

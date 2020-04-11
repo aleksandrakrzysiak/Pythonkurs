@@ -3,5 +3,5 @@ def walidacja(x):
         float(x)
         return True
     except:
-        print('To nie jest liczba. Podaj jeszcze raz.')
+        print('To nie jest liczba. Spróbuj drugi raz.')
         return False
