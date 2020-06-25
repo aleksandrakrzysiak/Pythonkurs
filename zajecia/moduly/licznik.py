@@ -1,10 +1,11 @@
 import openpyxl
 # import zajecia.moduly.menu
 
+
 def licznik():
     try:
         # oweira plik do odczytu i zapisu ale go nie tworzy
-        with open('licznik.xlsx', 'r+') as plik:
+        with open('licznik.txt', 'r+') as plik:
             #odczytujemy stan licznika w pliku
             ilosc_uruchomien = plik.read()
 
@@ -22,12 +23,12 @@ def licznik():
             plik.seek(0)
 
             # zapisujemy do pliku .write() przyjmuje str więc rzutujemy przed zapisem
-            plik.write(str(ilosc_uruchomien))
+            plik.write(f'Ola : {str(ilosc_uruchomien)}')
 
             print(f"=={ilosc_uruchomien}==")
     except FileNotFoundError:
         # jeśli pliku nie ma to tworzymy go i wpisujemy wartość początkową 1
-        with open('licznik.xlsx', 'w') as plik:
+        with open('licznik.txt', 'w') as plik:
             plik.write("1")
             print("1")
 

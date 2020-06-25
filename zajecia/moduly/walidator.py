@@ -1,7 +1,8 @@
-def walidacja(x):
+def validation(x):
     try:
         float(x)
         return True
     except:
-        print('To nie jest liczba. Spróbuj drugi raz.')
+        print('This is not a number. Please try again.')
         return False
+
